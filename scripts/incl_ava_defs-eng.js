@@ -960,7 +960,7 @@ incl_ava_defs={
     },
     'sdb':{
       'title_e':"Survey Drawings",
-      'title_f':"Dessins d'arpentage",
+      'title_f':"Navigateur de la carta",
       'mapInitState':true,
       'hasParameters':true,
       'hasAnimate':false,
@@ -1017,6 +1017,18 @@ incl_ava_defs={
         ],
       'reportDetail':
         [{tag:'p',child:['This tool does not support detailed search items']}]
+    },
+    'mb':{
+      'title_e':"Map Browser",
+      'title_f':"",
+      'mapInitState':true,
+      'hasParameters':true,
+      'hasAnimate':false,
+      'longReport':false,
+      'landscapeReport':false,
+      'formParam':{},
+      'reportBody':{},
+      'reportDetail':{}
     }
   }
 
