@@ -1026,9 +1026,16 @@ incl_ava_defs={
       'hasAnimate':false,
       'longReport':false,
       'landscapeReport':false,
-      'formParam':{},
-      'reportBody':{},
-      'reportDetail':{}
+      'formParam':[
+        {tag:'h3',child:['Layers:']},
+        {tag:'div',child:[
+          {tag:'label',attr:{htmlFor:'bathylayer'},child:["Bathymetric Surface"]},
+          {tag:'input',attr:{id:'bathylayer',type:'checkbox',name:'layerlist',checked:'checked'}},
+          {tag:'br'}
+        ]}
+      ],
+      'reportBody':[],
+      'reportDetail':[]
     }
   }
 

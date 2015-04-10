@@ -19,7 +19,22 @@ if(!(typeof avaIFaceJS === 'undefined')) {
 
   /*** Map Interaction functions ***/
 
-  avaMapJS.mb_func={init: function(){}}
+  avaMapJS.mb_func={
+    init: function(){
+        //TODO: Get WMS URL and layer name
+      $('#bathylayer').on('click',avaMapJS.mb_func.changeLayer);
+      avaMapJS.mb_func.bathy_WMS = new OpenLayers.Layer.WMS("BathyLayer",
+        '',{
+          layers:'bathy',
+          transparent:true
+        }
+      );
+      avaMapJS.setMapLayer(avaMapJS.mb_func.bathy_WMS);
+    },
+    changeLayer: function(evt){
+      //TODO: Set trigger event to enable/disable the map layer
+    }
+  }
 } else if (!(typeof avaMapDetJS === 'undefined')) {
   avaMapDetJS.mb_func = {init: function () {}};
 }
