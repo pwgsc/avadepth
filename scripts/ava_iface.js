@@ -297,6 +297,15 @@ avaIFaceJS = {
     avaIFaceJS.mapJS = null;
     avaIFaceJS.detailWindow.map = null;
     avaIFaceJS.paramWindow.useParam(false);
+
+    // Configure language sets
+    lang.code_index = {'en':0,'fr':1};
+    lang.codes = {
+
+    };
+    lang.setLang(); // reads browser's language default
+
+    // Load map if available
     if (!avaIFaceJS.mapJS) {
       avaIFaceJS.mapJS = $('#embed_map')[0].contentWindow.avaMapJS;
       avaIFaceJS.detailWindow.mapJS = $('#report_map')[0].contentWindow.avaMapDetJS;
@@ -341,13 +350,8 @@ avaIFaceJS = {
     var pg_entry = incl_ava_defs.avaPages[avaIFaceJS.currentPage];
 
     // Set Title
-	if(window.location.href.indexOf("fra") > -1) {
-		//If url contains 'fra'	show the French title
-		$('#ava_map_ttl').text(pg_entry.title_f);
-		} else {
-		//If url does not contain 'fra' show the English title
-		$('#ava_map_ttl').text(pg_entry.title_e);
-    }
+    lang.addCodes({title:pg_entry.title});
+    $('#ava_map_ttl').html(lang.getText("title"));
 
     // Page Form Parameters
     avaIFaceJS.paramWindow.hasAnimate=pg_entry.hasAnimate;
