@@ -300,10 +300,16 @@ avaIFaceJS = {
 
     // Configure language sets
     lang.code_index = {'en':0,'fr':1};
-    lang.codes = {
-
-    };
-    lang.setLang(); // reads browser's language default
+    lang.addCodes({
+      '!#toggleLink':["Parameters","Param&#232;tres"],
+      '!#chg_lang':['Français','English'],
+      '!#ava_map_ttl':['Avadepth Maps', 'Plans d\'Avadepth'],
+      '!#map_parameters':['Please choose a search tool from the menu above.','Se il vous plaît choisir un outil dans le menu ci-dessus de recherche.']
+    });
+    this.changeLanguage();
+    $('#chg_lang').click(function(){
+      avaIFaceJS.changeLanguage(['en','fr'][lang.cur_lang*-1+1])
+    });
 
     // Load map if available
     if (!avaIFaceJS.mapJS) {
@@ -328,6 +334,10 @@ avaIFaceJS = {
     if(querystring('page').length>0){
       avaIFaceJS.loadPage(querystring('page'));
     }
+  },
+
+  changeLanguage: function(language_code){
+    lang.setLang(language_code); // reads browser's language default
   },
 
   /*** General Functions ***/
