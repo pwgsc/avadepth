@@ -300,7 +300,7 @@ avaIFaceJS = {
 
     // Configure language sets
     $.translate.code_index = {'en':0,'fr':1};
-    $.translate.addCodes({
+    $.translate.add_codes({
       '!#toggleLink':["Parameters","Param&#232;tres"],
       '!#chg_lang':['Français','English'],
       '!#ava_map_ttl':['Avadepth Maps', 'Plans d\'Avadepth'],
