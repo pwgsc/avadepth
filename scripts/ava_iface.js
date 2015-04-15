@@ -297,6 +297,21 @@ avaIFaceJS = {
     avaIFaceJS.mapJS = null;
     avaIFaceJS.detailWindow.map = null;
     avaIFaceJS.paramWindow.useParam(false);
+
+    // Configure language sets
+    $.translate.code_index = {'en':0,'fr':1};
+    $.translate.addCodes({
+      '!#toggleLink':["Parameters","Param&#232;tres"],
+      '!#chg_lang':['Français','English'],
+      '!#ava_map_ttl':['Avadepth Maps', 'Plans d\'Avadepth'],
+      '!#map_parameters':['Please choose a search tool from the menu above.','Se il vous plaît choisir un outil dans le menu ci-dessus de recherche.']
+    });
+    this.changeLanguage();
+    $('#chg_lang').click(function(){
+      avaIFaceJS.changeLanguage(['en','fr'][$.translate.cur_lang*-1+1])
+    });
+
+    // Load map if available
     if (!avaIFaceJS.mapJS) {
       avaIFaceJS.mapJS = $('#embed_map')[0].contentWindow.avaMapJS;
       avaIFaceJS.detailWindow.mapJS = $('#report_map')[0].contentWindow.avaMapDetJS;
@@ -321,6 +336,10 @@ avaIFaceJS = {
     }
   },
 
+  changeLanguage: function(language_code){
+    $.translate.set_language(language_code); // reads browser's language default
+  },
+
   /*** General Functions ***/
   // Change page for new report
   loadPage: function (page_name) {
@@ -341,13 +360,8 @@ avaIFaceJS = {
     var pg_entry = incl_ava_defs.avaPages[avaIFaceJS.currentPage];
 
     // Set Title
-	if(window.location.href.indexOf("fra") > -1) {
-		//If url contains 'fra'	show the French title
-		$('#ava_map_ttl').text(pg_entry.title_f);
-		} else {
-		//If url does not contain 'fra' show the English title
-		$('#ava_map_ttl').text(pg_entry.title_e);
-    }
+    $.translate.add_codes({title:pg_entry.title});
+    $('#ava_map_ttl').html($.translate.get_text("title"));
 
     // Page Form Parameters
     avaIFaceJS.paramWindow.hasAnimate=pg_entry.hasAnimate;

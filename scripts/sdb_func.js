@@ -13,7 +13,9 @@ if(!(typeof avaIFaceJS === 'undefined')) {
 
     init: function () {
       // Fill Form Parameters
+      $.translate.add_codes({
 
+      });
       // Load and fill location drop down
       $('#channel').change(avaIFaceJS.sdb_func.fillLocation);
 	  
