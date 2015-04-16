@@ -39,11 +39,11 @@ avaMapJS={
     avaMapJS.map.getControlsByClass("OpenLayers.Control.SelectFeature")[0].handlers.feature.stopDown=false;
     // Google Maps layer
     // Loads Google Satellite map, or Google Street map for <IE9
-    var gmap;
+    avaMapJS.gmap;
     if ( document.addEventListener ){
-      gmap = new OpenLayers.Layer.Google("Google Satellite", {type: google.maps.MapTypeId.SATELLITE});
+      avaMapJS.gmap = new OpenLayers.Layer.Google("Google Satellite", {type: google.maps.MapTypeId.SATELLITE});
     } else {
-      gmap = new OpenLayers.Layer.Google("Google", {});
+      avaMapJS.gmap = new OpenLayers.Layer.Google("Google", {});
       //gmap = new OpenLayers.Layer.OSM("Street Map", {});
     }
 
@@ -64,7 +64,7 @@ avaMapJS={
 
     // Add layers
    	//avaMapJS.map.addLayers([gmap,wmsLayer]);
-   	avaMapJS.map.addLayers([gmap]);
+   	avaMapJS.map.addLayers([avaMapJS.gmap]);
     //avaMapJS.map.zoomToExtent(new OpenLayers.Bounds(-13625920,6283000,-13941007,6458623));
     avaMapJS.map.setCenter(new OpenLayers.LonLat(-13682000,6306500),5);
 

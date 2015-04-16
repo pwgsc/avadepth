@@ -213,8 +213,7 @@ incl_ava_defs={
 
   avaPages:{
     'acv':{
-      'title_e': "Animated Currents and Velocities",
-      'title_f': "Animation et vélocités du courant",
+      'title': ["Animated Currents and Velocities","Animation et vélocités du courant"],
       'mapInitState':true,
       'hasParameters':true,
       'hasAnimate':true,
@@ -328,8 +327,7 @@ incl_ava_defs={
       'reportDetail':[]
     },
     'dd': {
-      'title_e': "Available Depth Report for Fraser River South Arm",
-      'title_f': "Rapport sur les profondeurs disponibles",
+      'title': ["Available Depth Report for Fraser River South Arm","Rapport sur les profondeurs disponibles"],
       'mapInitState':false,
       'hasParameters':true,
       'hasAnimate':false,
@@ -506,8 +504,7 @@ incl_ava_defs={
       ]
     },
     'tw':{
-      'title_e':"Transit Window Report",
-      'title_f':"Fenêtre de circulation",
+      'title':["Transit Window Report","Fenêtre de circulation"],
       'mapInitState':false,
       'hasParameters':true,
       'hasAnimate':false,
@@ -681,8 +678,7 @@ incl_ava_defs={
       ]
     },
     'pwl':{
-      'title_e':"Predicted Water Levels & Velocities",
-      'title_f':"Vélocités et niveaux prévus de l’eau",
+      'title':["Predicted Water Levels & Velocities","Vélocités et niveaux prévus de l’eau"],
       'mapInitState':true,
       'hasParameters':true,
       'hasAnimate':false,
@@ -800,8 +796,7 @@ incl_ava_defs={
         ]
     },
     'frh':{
-      'title_e':"Fraser River Hydrograph",
-      'title_f':"Hydrographie du fleuve Fraser",
+      'title':["Fraser River Hydrograph","Hydrographie du fleuve Fraser"],
       'mapInitState':false,
       'hasParameters':true,
       'hasAnimate':false,
@@ -837,8 +832,7 @@ incl_ava_defs={
       ]
     },
     'ccc':{
-      'title_e':"Current Channel Conditions for Fraser River South Arm",
-      'title_f':"Conditions actuelles du chenal – bras sud du fleuve Fraser",
+      'title':["Current Channel Conditions for Fraser River South Arm","Conditions actuelles du chenal – bras sud du fleuve Fraser"],
       'mapInitState':false,
       'hasParameters':false,
       'hasAnimate':false,
@@ -959,8 +953,7 @@ incl_ava_defs={
 
     },
     'sdb':{
-      'title_e':"Survey Drawings",
-      'title_f':"Navigateur de la carta",
+      'title':["Survey Drawings","Navigateur de la carta"],
       'mapInitState':true,
       'hasParameters':true,
       'hasAnimate':false,
@@ -1019,15 +1012,13 @@ incl_ava_defs={
         [{tag:'p',child:['This tool does not support detailed search items']}]
     },
     'mb':{
-      'title_e':"Map Browser",
-      'title_f':"",
+      'title':["Map Browser",""],
       'mapInitState':true,
       'hasParameters':true,
       'hasAnimate':false,
       'longReport':false,
       'landscapeReport':false,
       'formParam':[
-        {tag:'h3',child:['Layers:']},
         {tag:'div',child:[
           {tag:'label',attr:{htmlFor:'bathylayer'},child:["Bathymetric Surface"]},
           {tag:'input',attr:{id:'bathylayer',type:'checkbox',name:'layerlist',checked:'checked'}},

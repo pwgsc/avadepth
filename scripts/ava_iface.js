@@ -337,7 +337,7 @@ avaIFaceJS = {
   },
 
   changeLanguage: function(language_code){
-    $.translate.set_language(language_code); // reads browser's language default
+    $.translate.set_language(language_code); // reads browser's language by default
   },
 
   /*** General Functions ***/
