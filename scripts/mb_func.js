@@ -24,7 +24,7 @@ if(!(typeof avaIFaceJS === 'undefined')) {
         //TODO: Get WMS URL and layer name
       parent.$('#bathylayer').on('click',avaMapJS.mb_func.changeLayer);
       avaMapJS.mb_func.bathy_WMS = new OpenLayers.Layer.WMS("BathyLayer",
-        'http://www2.pac.dfo-mpo.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
+        'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'Avadepth_surfaces',
           transparent:true
         }
