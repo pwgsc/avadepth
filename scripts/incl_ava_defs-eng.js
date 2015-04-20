@@ -1020,8 +1020,14 @@ incl_ava_defs={
       'landscapeReport':false,
       'formParam':[
         {tag:'div',child:[
-          {tag:'label',attr:{htmlFor:'bathylayer'},child:["Bathymetric Surface"]},
           {tag:'input',attr:{id:'bathylayer',type:'checkbox',name:'layerlist',checked:'checked'}},
+          {tag:'label',attr:{htmlFor:'bathylayer'},child:["Bathymetric Surface"]},
+          {tag:'br'},
+          {tag:'input',attr:{id:'enclayer',type:'checkbox',name:'layerlist',checked:'checked'}},
+          {tag:'label',attr:{htmlFor:'enclayer'},child:["Navigation Aids"]},
+          {tag:'br'},
+          {tag:'input',attr:{id:'soundlayer',type:'checkbox',name:'layerlist',checked:'checked'}},
+          {tag:'label',attr:{htmlFor:'soundlayer'},child:["Soundings"]},
           {tag:'br'}
         ]}
       ],
