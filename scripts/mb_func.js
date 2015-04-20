@@ -27,7 +27,8 @@ if(!(typeof avaIFaceJS === 'undefined')) {
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'Avadepth_surfaces',
           transparent:true,
-		      version:'1.3.0'
+		      version:'1.3.0',
+		      projection: avaMapJS.map.displayProjection
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.bathy_WMS);
@@ -35,7 +36,8 @@ if(!(typeof avaIFaceJS === 'undefined')) {
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'NavAids',
           transparent:true,
-		      version:'1.3.0'
+		      version:'1.3.0',
+		      projection: avaMapJS.map.displayProjection
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.navaid_WMS);
@@ -43,7 +45,8 @@ if(!(typeof avaIFaceJS === 'undefined')) {
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'Soundings',
           transparent:true,
-		      version:'1.3.0'
+		      version:'1.3.0',
+		      projection: avaMapJS.map.displayProjection
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.sound_WMS);
