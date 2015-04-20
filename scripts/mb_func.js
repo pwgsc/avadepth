@@ -26,21 +26,24 @@ if(!(typeof avaIFaceJS === 'undefined')) {
       avaMapJS.mb_func.bathy_WMS = new OpenLayers.Layer.WMS("BathyLayer",
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'Avadepth_surfaces',
-          transparent:true
+          transparent:true,
+		      version:'1.3.0'
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.bathy_WMS);
       avaMapJS.mb_func.navaid_WMS = new OpenLayers.Layer.WMS("NavAids",
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'NavAids',
-          transparent:true
+          transparent:true,
+		      version:'1.3.0'
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.navaid_WMS);
       avaMapJS.mb_func.sound_WMS = new OpenLayers.Layer.WMS("soundings",
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'Soundings',
-          transparent:true
+          transparent:true,
+		      version:'1.3.0'
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.sound_WMS);
