@@ -28,7 +28,7 @@ if(!(typeof avaIFaceJS === 'undefined')) {
           layers:'Avadepth_surfaces',
           transparent:true,
 		      version:'1.3.0',
-		      projection: avaMapJS.map.displayProjection
+		      projection: avaMapJS.map.projection
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.bathy_WMS);
@@ -37,7 +37,7 @@ if(!(typeof avaIFaceJS === 'undefined')) {
           layers:'NavAids',
           transparent:true,
 		      version:'1.3.0',
-		      projection: avaMapJS.map.displayProjection
+		      projection: avaMapJS.map.projection
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.navaid_WMS);
