@@ -221,11 +221,13 @@ avaIFaceJS = {
     paramForm: null,
     isInit:false,
     hasAnimate:false,
+	  hasApply:true,
     init: function(){
       avaIFaceJS.paramWindow.linkBtn=$('#toggleLink');
       avaIFaceJS.paramWindow.paramForm=$('#map_parameters');
       avaIFaceJS.paramWindow.slideWrap=$('#map_param_wrap');
       avaIFaceJS.paramWindow.isInit=true;
+      avaIFaceJS.paramWindow.hasApply=true;
     },
 
     useParam: function(state){
@@ -266,13 +268,15 @@ avaIFaceJS = {
     addForm: function(content){
       if(!avaIFaceJS.paramWindow.isInit){avaIFaceJS.paramWindow.init()}
       var pgParam = $.extend([], content);
-	  if(window.location.href.indexOf("fra") > -1) {
-		//If url contains 'fra'	use 
-		pgParam.push({tag: 'button', attr: {id: 'submit', type: 'button', className: 'button button-accent', name: 'submit'}, 'child': ['Appliquer']});
-		} else {
-		//If url does not contain 'fra' use
-		pgParam.push({tag: 'button', attr: {id: 'submit', type: 'button', className: 'button button-accent', name: 'submit'}, 'child': ['Apply']});
-	  }
+	    if (avaIFaceJS.paramWindow.hasApply){
+			  if(window.location.href.indexOf("fra") > -1) {
+				//If url contains 'fra'	use
+				pgParam.push({tag: 'button', attr: {id: 'submit', type: 'button', className: 'button button-accent', name: 'submit'}, 'child': ['Appliquer']});
+				} else {
+				//If url does not contain 'fra' use
+				pgParam.push({tag: 'button', attr: {id: 'submit', type: 'button', className: 'button button-accent', name: 'submit'}, 'child': ['Apply']});
+			  }
+	    }
       if(avaIFaceJS.paramWindow.hasAnimate) {
         pgParam.push({tag:'button',attr:{id:'replay',className: "button button-accent",style:'display:none',name:'replay'},child:['Replay']});
       }
@@ -365,6 +369,7 @@ avaIFaceJS = {
 
     // Page Form Parameters
     avaIFaceJS.paramWindow.hasAnimate=pg_entry.hasAnimate;
+	  avaIFaceJS.paramWindow.hasApply=pg_entry.parametersApply;
     avaIFaceJS.paramWindow.addForm(pg_entry.formParam);
 
     // Add Content layout for Detail Window

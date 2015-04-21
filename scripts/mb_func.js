@@ -26,11 +26,14 @@ if(!(typeof avaIFaceJS === 'undefined')) {
       avaMapJS.mb_func.bathy_WMS = new OpenLayers.Layer.WMS("BathyLayer",
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
           layers:'Avadepth_surfaces',
+          //layers:'Mundo',
           transparent:true,
 		      version:'1.3.0',
-		      projection: avaMapJS.map.projection
+		      projection: avaMapJS.map.projection,
+		      exceptions: 'XML'
         }
       );
+	    avaMapJS.mb_func.bathy_WMS.maxExtent = avaMapJS.map.maxExtent;
       avaMapJS.setMapLayer(avaMapJS.mb_func.bathy_WMS);
       avaMapJS.mb_func.navaid_WMS = new OpenLayers.Layer.WMS("NavAids",
         'http://vapw-chintz.pwgsc.gc.ca/spatialfusionserver/services/ows/wms/avadepth',{
@@ -46,16 +49,17 @@ if(!(typeof avaIFaceJS === 'undefined')) {
           layers:'Soundings',
           transparent:true,
 		      version:'1.3.0',
-		      projection: avaMapJS.map.displayProjection
+		      projection: avaMapJS.map.projection
         }
       );
       avaMapJS.setMapLayer(avaMapJS.mb_func.sound_WMS);
     },
     changeLayer: function(evt){
       //TODO: Set trigger event to enable/disable the map layer
-	    if ($(evt).id == 'bathylayer')avaMapJS.mb_func.bathy_WMS.display($(evt).checked);
-	    if ($(evt).id == 'enclayer')avaMapJS.mb_func.navaid_WMS.display($(evt).checked);
-	    if ($(evt).id == 'soundlayer')avaMapJS.mb_func.sound_WMS.display($(evt).checked);
+	    var t = $(evt).target;
+	    if (t.id == 'bathylayer')avaMapJS.mb_func.bathy_WMS.display(t.checked);
+	    if (t.id == 'enclayer')avaMapJS.mb_func.navaid_WMS.display(t.checked);
+	    if (t.id == 'soundlayer')avaMapJS.mb_func.sound_WMS.display(t.checked);
     }
   }
 } else if (!(typeof avaMapDetJS === 'undefined')) {

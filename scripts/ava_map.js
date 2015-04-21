@@ -22,7 +22,7 @@ avaMapJS={
     // Map Options and constructor
     var opNav = new OpenLayers.Control.Navigation({'zoomWheelEnabled':false});
 	  var options = {
-      maxExtent: new OpenLayers.Bounds(-13625920,6283000,-13941007,6458623),//-125,49,-121,50),
+      //maxExtent: new OpenLayers.Bounds(-13625920,6283000,-13941007,6458623),//-125,49,-121,50),
 		  controls:[new oscar.Control.PanZoomBar,  new OpenLayers.Control.MousePosition, new OpenLayers.Control.ScaleLine, opNav],
 			projection: new OpenLayers.Projection("EPSG:3857"),
 			displayProjection: new OpenLayers.Projection("EPSG:4326"),
