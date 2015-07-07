@@ -1,0 +1,260 @@
+.languages-examples li {
+	float: left;
+	width: 50%;
+}
+
+#cn-content h2 {
+  background:#555 url('/images/h-square.gif') no-repeat left top;
+  color:#FFF;
+  font-size:1em;
+  font-weight:700;
+  margin-bottom:5px;
+  margin-left:0;
+  margin-right:0;
+  padding:3px 3px 3px 25px
+}
+
+form#daily_depth label { font-weight: bold; }
+form#daily_depth div { margin-bottom: 15px; }
+
+.active { border: 0 }
+
+ul.tabs {
+  background: white !important;
+  background-image: none;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+#conditions-parent {
+  height: 1500px !important;
+}
+
+div.filled {
+  background: #F9F9F9;
+}
+
+.tabs-style-1 .tabs li a, .tabs-style-1 .tabs li a:hover, .tabs-style-1 .tabs li a:focus, .tabs-style-1 .tabs li {
+  background: #105282;
+}
+
+.tabs-style-1 .tabs li a:hover {
+  color: white !important;
+  border-top-color: #105282;
+  border-top-width: 2px;
+  text-decoration: underline;
+}
+
+.tabs-style-1 .tabs li a.active {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f9f9f9;
+}
+
+.stripe {
+  background: #F3F3F3;
+}
+
+.required , .red {
+  color: red;
+}
+
+.least-depth {
+  color:red;
+  font-weight: bold;
+}
+
+
+.map-group img {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+.back {
+  margin-left: 13px;
+}
+
+.print_show, #ui-datepicker-div {
+  display: none;
+}
+
+.print_button {
+  align:left;
+  margin:2em 2em;
+}
+img#ccg-logo, img#ccg-word {
+  display: none;
+}
+
+.yaxislabel { color: black; }
+
+table.dataTable tr.odd, table tr.odd, table.dataTable tr.odd td.sorting_1 { background: #F3F3F3; }
+table.dataTable tr.even, table tr.even, table.dataTable tr.even td.sorting_1 { background: #FFFFFF; }
+
+tr.controlling td { color: red; }
+
+div.inline-block {
+  display:inline-block
+}
+
+table.styled th, table.styled td {
+  text-align: center;
+  padding: 3px 10px
+}
+
+table.styled td:first-child { text-align: left }
+table.styled th { border-bottom: 1px solid black }
+
+div#depth_chart {
+  height:400px;
+  width:500px;
+}
+
+img.spinner {
+  display:none;
+  width:30px;
+  height:30px;
+  margin: 0 0 -12px 10px
+}
+
+div#report_body {
+  text-align:center;
+  width:100%;
+  margin:0 auto;
+}
+
+div#report_body table tr td{
+  padding:4px;
+}
+
+div#report_content  {
+    margin:0 auto;
+}
+
+div#report_content img {
+    margin:0 auto;
+}
+
+table#transit-window {
+  margin:0 auto;
+  width:100% !important;
+}
+
+div#hydrograph_report {
+  display:block;
+  width:9in;
+}
+
+div#hydrograph_report div#hydrograph_chart{
+  margin:0
+  width: 100%;
+  height:300px;
+}
+
+/* Floating Div */
+div#report_detail {
+    position:absolute;
+    top:-50px;
+    z-index:1000;
+    background-color:white;
+    text-align: center;
+    display:none;
+}
+div#report_det_cover{
+    position:absolute;
+    top:0;
+    left:0;
+    background:url('../images/transpBlack50.png') repeat center;
+    width:100%;
+    height:100%;
+    z-index:999;
+    display:none;
+}
+div#rep_detail_map{
+    float:left;
+    height:auto;
+    vertical-align:middle;
+    display:none;
+}
+
+div#report_body table{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#detail_content {
+    margin:5px;
+}
+
+/* Resize Text size for Parameter and Reference Map Link */
+a#toggleLink,summary#ref_map_link{
+    font-size:16px;
+}
+
+
+/* Error Message */
+#errorContent{
+    color:red;
+    font-size:14px;
+    font-weight:bold;
+    display:none;
+}
+.tabs-style-1 .tabs li a, .tabs-style-1 .tabs li a:hover, .tabs-style-1 .tabs li a:focus, .tabs-style-1 .tabs li {
+  background: #A00 url('/images/gradient.jpg');
+}
+
+.tabs-style-1 .tabs li a:hover {
+  color: white !important;
+  border-top-color: #A00;
+  border-top-width: 2px;
+  text-decoration: underline;
+}
+
+.tabs-style-1 .tabs li a.active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.stripe {
+  background: #F3F3F3;
+}
+
+.required {
+  color: red;
+}
+
+.print_show, .print_show_inline {
+  display: none;
+}
+
+.print_holder {
+    width:100%;
+    text-align:left;
+}
+
+.page-break {
+    clear: both;
+}
+
+.cal-header {
+	margin-bottom:0px !important;
+}
+
+.cal-cnt {
+	margin-bottom:0px !important;
+}
+
+#report_tbl td {
+	text-align:left;
+}
+
+.axisLabels {
+	font-size:16px;
+}

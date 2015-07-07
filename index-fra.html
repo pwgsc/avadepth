@@ -1,0 +1,91 @@
+<!--#include virtual="/includes/header-fra.html" -->
+
+<!-- MainContentStart -->
+<script>
+  $(function() {
+    $.getJSON("db_last_modified.pl", function(data) {
+      $('#last_modified').html(data.last_updated)
+    });
+  });
+</script>
+<section>
+  <div class="span-8">
+    <div class="wet-boew-tabbedinterface tabs-style-2 cycle animate">
+      <ul class="tabs">
+        <li><a href="#tab1">1</a></li>
+        <li><a href="#tab2">2</a></li>
+        <li><a href="#tab3">3</a></li>
+      </ul>
+      <div class="tabs-panel">
+        <div id="tab1">
+          <section>
+            <div class="span-3 row-start margin-bottom-none">
+              <div class="tabs-content-pad">
+                <h2 class="margin-top-none">Avadepth</h2>
+                  <p>
+                  Avadepth – Prévisions de la profondeur d'eau disponible pour les navires empruntant le chenal du bras sud du Fraser.
+                  </p>
+                <p><a href="/theory-theorie-fra.html" class="button button-accent">Pour en savoir plus</a></p>
+              </div>
+            </div>
+            <div class="span-5 row-end"><img src="/images/banners/fraser_port.png" alt="Fraser River" class="margin-bottom-none" /></div>
+            <div class="clear"></div>
+          </section>
+        </div>
+        <div id="tab2">
+          <section>
+            <div class="span-3 row-start margin-bottom-none">
+              <div class="tabs-content-pad">
+                <h2 class="margin-top-none">Distribution</h2>
+                  <p>Avadepth – Fourni toutes les deux semaines aux pilotes, à Port Metro Vancouver et aux compagnies de transport maritime pour les aider à déterminer le tirant d'eau maximum et les heures de navigation optimales sur le fleuve.</p>
+              </div>
+            </div>
+            <div class="span-5 row-end"><img src="/images/banners/frpa.png" alt="Fraser Port Authority" class="margin-bottom-none" /></div>
+            <div class="clear"></div>
+          </section>
+        </div>
+        <div id="tab3">
+          <section>
+            <div class="span-3 row-start margin-bottom-none">
+              <div class="tabs-content-pad">
+                <h2 class="margin-top-none">Rapports</h2>
+                <p>Le système informatisé de création de rapports prévoit le tirant d'eau disponible et la « fenêtre de circulation » correspondante pour les navires de haute mer qui doivent naviguer dans le chenal principal du bras sud du fleuve Fraser entre Sand Heads (kilomètre 0) et les quais du Fraser à Surrey (kilomètre 34).</p>
+              </div>
+            </div>
+            <div class="span-5 row-end"><img src="/images/banners/pwgsc_profiler_ii.png" alt="PWGSC Profiler" class="margin-bottom-none" /></div>
+            <div class="clear"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</section>
+
+<section id="cn-content">
+  <div class="span-6">
+    <h2>Bienvenue</h2>
+
+    <p>
+      Avadepth – Fourni toutes les deux semaines aux pilotes, à Port Metro Vancouver et aux compagnies de transport maritime pour les aider à déterminer le tirant d'eau maximum et les heures de navigation optimales sur le fleuve.
+    </p>
+
+    <p>
+      Le système informatisé de création de rapports prévoit le tirant d'eau disponible et la « fenêtre de circulation » correspondante pour les navires de haute mer qui doivent naviguer dans le chenal principal du bras sud du fleuve Fraser entre Sand Heads (kilomètre 0) et les quais du Fraser à Surrey (kilomètre 34).
+    </p>
+  </div>
+
+  <div class="span-2">
+    <h2>Liens</h2>
+
+    <ul>
+  <li><a target="_blank" href="http://www.waterlevels.gc.ca/fra">Marées, courants et niveaux de l'eau – Service hydrographique du Canada</a></li>
+  <li><a target="_blank" href="http://www.wateroffice.ec.gc.ca/index_f.html">Données hydrométriques en temps réel – Environnement Canada</a></li>
+  <li><a target="_blank" href="http://www.portmetrovancouver.com/fr/default.aspx">Port Metro Vancouver</a></li>
+  <li><a target="_blank" href="http://www.ppa.gc.ca/">Administration de pilotage du Pacifique</a></li>
+</ul> 
+  </div>
+</section>
+
+<p style="float:right;margin-bottom:-10px">Database last updated: <span id="last_modified"></span> PST</p>
+<!--#include virtual="/includes/footer-fra.html" -->

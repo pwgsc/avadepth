@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.com/wet-boew/License-fra.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+<!-- DataAjaxFragmentStart -->
+
+<li><section><h3><a href="#">À propos d'Avadepth</a></h3><div class="mb-sm">
+<div class="span-2">
+<section>
+<ul>
+<li><a href="/theory-theorie-fra.html">Contexte et théorie</a></li>
+</ul>
+</section>
+</div>
+<div class="clear"></div>
+</div></section></li>
+
+<li><section><h3><a href="#">Rapports Avadepth</a></h3><div class="mb-sm">
+<div class="span-2">
+<section>
+<ul>
+<li><a href='/Data/Weekly/weekly.pdf' target="_blank" style="background-image:none;">Rapport hebdomadaire</a></li>
+<li><a href='/ad-pd-fra.html'>Profondeurs disponibles</a></li>
+<li><a href='/tw-ft-fra.html'>Fenêtre de circulation</a></li>
+</ul>
+</section>
+</div>
+<div class="span-2">
+<section>
+<ul>
+<li><a href='/pwl-nep-fra.html'>Niveaux et vélocités prévus de l'eau</a></li>
+<li><a href='/acv-cva-fra.html'>Animation et vélocités du courant</a></li>
+<li><a href='/hydrograph-hydrogramme-fra.html'>Hydrographie du fleuve Fraser</a></li>
+</ul>
+</section>
+</div>
+<div class="clear"></div>
+</div></section></li>
+
+<li><section><h3><a href="#">Conditions au fond du chenal</a></h3><div class="mb-sm">
+<section>
+<ul>
+<li><a href='/cc-ca-fra.html'>Current Channel Conditions for Fraser River South Arm</a></li>
+<li><a href='/Data/overview/FR_Overview_S.dwf' target="_blank" style="background-image:none;">Channel Overview for Fraser River South Arm</a></li>
+<li><a href='/sdb-bds-fra.html'>Dessins d'arpentage</a></li>
+</ul>
+</section>
+<div class="clear"></div>
+</div></section></li>
+
+<!--
+<li><section><h3><a href="ba-ab-fra.html">Analyse bathymétrique</a></h3><div class="mb-sm">
+-->
+
+<!-- DataAjaxFragmentEnd -->
+</html>
