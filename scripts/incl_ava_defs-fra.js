@@ -353,7 +353,7 @@ incl_ava_defs={
               "m\u00B3/s)"
             ]},
             {tag:'br'},
-            {tag:'input',attr:{id:'discharge_radio',type:'radio',name:'discharge',value:'Selected'}},
+            {tag:'input',attr:{id:'discharge_radio',type:'radio',name:'discharge',value:'Selected',checked:'checked'}},
             {tag:'label',attr:{htmlFor:'discharge_radio',style:'font-weight:normal'},child:["Choisi"]},
             {tag:'select',attr:{id:'selected_discharge'}},
             " m\u00B3/s",
@@ -431,7 +431,7 @@ incl_ava_defs={
 				]}
           ]},
 		  {tag:'section',child:[
-            {tag:'div',attr:{style:'margin-top:15px;',id:'depth_chart',className:'demo-placeholder'}}
+		    {tag:'div',attr:{style:'margin-top:15px;;margin-left:auto; margin-right:auto',id:'depth_chart',className:'demo-placeholder'}}
 		  ]}
         ]}
       ]}],
