@@ -1108,5 +1108,3 @@ var mapStyle = {
     })
   }
 };
-
-//# sourceURL=incl_ava_defs-eng.js

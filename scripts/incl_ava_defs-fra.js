@@ -310,7 +310,7 @@ incl_ava_defs={
           {tag:'div',attr:{id:'loading',style:'padding:1em 1em;display:none'},child:[
             {tag:'div',attr:{style:'width: 35px;height: 30px; float: left;'}},
             "Processing... ",
-            {tag:'span',attr:{id:'frame_count'},child:[
+            {tag:'span',attr:{style:'font-weight:bold;',id:'frame_count'},child:[
               "(Frames retrieved: ",
               {tag:'span',attr:{id:'frames_retrieved'}},
               " / ",
@@ -353,7 +353,7 @@ incl_ava_defs={
               "m\u00B3/s)"
             ]},
             {tag:'br'},
-            {tag:'input',attr:{id:"selected_radio",type:'radio',name:'discharge',value:'Selected'}},
+            {tag:'input',attr:{id:'discharge_radio',type:'radio',name:'discharge',value:'Selected'}},
             {tag:'label',attr:{htmlFor:'discharge_radio',style:'font-weight:normal'},child:["Choisi"]},
             {tag:'select',attr:{id:'selected_discharge'}},
             " m\u00B3/s",
@@ -417,7 +417,7 @@ incl_ava_defs={
       'reportBody':[
         {tag:'div',child:[
           {tag:'div',attr:{className:'span-12'},child:[
-		    {tag:'section',attr:{'style':'padding-left:15%; padding-right:15%'},child:[
+		    {tag:'section',attr:{'style':'padding-left:20%; padding-right:20%'},child:[
               {tag:'table',attr:{id:'depths',style:"text-align:center"},child:[
 			    {tag:'thead',child:[
 				  {tag:'tr',child:[
@@ -425,15 +425,15 @@ incl_ava_defs={
 				    {tag:'th',child:["Chaînage (km)"]},
 				    {tag:'th',child:["Profondeur disponible (m)"]},
 				    {tag:'th',child:["Emplacement"]}
-				  ]}
-			    ]},
-                {tag:'tbody'}
-              ]}
+					]}
+				  ]},
+				  {tag:'tbody'}
+				]}
           ]},
-		  {tag:'section',attr:{'style':'padding-left:30%; padding-right:30%'},child:[
+		  {tag:'section',child:[
             {tag:'div',attr:{style:'margin-top:15px;',id:'depth_chart',className:'demo-placeholder'}}
-          ]}
-		]}
+		  ]}
+        ]}
       ]}],
       'reportDetail':[
         {tag:'div',child:[
@@ -762,8 +762,8 @@ incl_ava_defs={
                 {tag:'tbody'}
               ]}
             ]},
-            {tag:'ul',child:[
-              {tag:'li',attr:{style:'text-align:left'},child:[
+            {tag:'ul',attr:{style:'text-align:left'},child:[
+              {tag:'li',attr:{id:'note-at-bottom'},child:[
                 "Water level is referenced to Chart Datum which is relative to Local Low Water.",
                 {tag:'br'},
                 "Click on a time or location to display a graph."
@@ -920,11 +920,11 @@ incl_ava_defs={
               {tag:'tr',child:[
                 {tag:'td',child:[
                   "Users will need to download an Autodesk DWF viewer to view and display the Reference Plan. ",
-                  {tag:'a',attr:{href:'http://usa.autodesk.com/design-review/'},child:['Download Autodesk viewer']}
+                  {tag:'a',attr:{href:'http://usa.autodesk.com/design-review/',target:'_blank'},child:['Download Autodesk viewer']}
                 ]}
               ]}
             ]},
-            {tag:'div',attr:{className:'print_hide'},child:[
+            {tag:'div',attr:{id:'print_remove', className:'print_hide'},child:[
               {tag:'strong',child:['Channel Select']},
               {tag:'br'},
               {tag:'input',attr:{id:'inner_select',type:'radio',name:'channel_select',style:'display:inline',checked:'checked',value:'1'}},
