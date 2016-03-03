@@ -15,6 +15,15 @@ var loadJS = function(name, callback) {
 // Create global variables
 var page_lang = $('html').attr('lang');
 
+// Load additional libraries
+if (window.location.href.indexOf("fra") > -1) {
+    //If url contains 'fra'	use 
+    loadJS('incl_ava_defs-fra', function() {});
+} else {
+    //If url does not contain 'fra' use
+    loadJS('incl_ava_defs-eng', function() {});
+}
+
 // Create avaIFace
 var avaIFaceJS;
 avaIFaceJS = {
@@ -719,13 +728,7 @@ avaIFaceJS = {
         return res;
     }
 };
-if (window.location.href.indexOf("fra") > -1) {
-    //If url contains 'fra'	use 
-    loadJS('incl_ava_defs-fra', function() {});
-} else {
-    //If url does not contain 'fra' use
-    loadJS('incl_ava_defs-eng', function() {});
-}
+
 
 // moves param window if the page is resized
 window.onresize = function() {

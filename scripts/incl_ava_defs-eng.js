@@ -193,6 +193,71 @@ incl_ava_defs={
                 }
             }
         },
+	"MIR" : {
+            "Form" : {
+                "Title" : "Miramichi River Super",
+                "Order" : 5
+            },
+	    "Coords" : {
+                "Lat" : {
+                    "min" : 5906000,
+                    "max" : 5937000
+                },
+                "Lon" : {
+                    "min" : -7302000,
+                    "max" : -7226000
+                }
+	    },
+	    "Sections" : {
+                "MI" : {
+                    "Form" : {
+                        "Title" : "Miramichi River",
+                        "Key" : "MI"
+                    },
+                    "Names" : [
+                        "Miramichi, Reach 0",
+                        "Miramichi, Reach 1",
+                        "Miramichi, Reach 2",
+                        "Miramichi, Reach 3",
+                        "Miramichi, Reach 4",
+                        "Miramichi, Reach 5",
+                        "Miramichi, Reach 6",
+                        "Miramichi, Reach 7",
+                        "Miramichi, Reach 8",
+                        "Miramichi, Reach 9",
+                        "Miramichi, Reach 10",
+                        "Miramichi, Reach 11",
+                        "Miramichi, Reach 12",
+                        "Miramichi, Reach 13",
+                        "Miramichi, Reach 14",
+                        "Miramichi, Reach 15",
+                        "Miramichi, Reach 16",
+                        "Miramichi, Reach 17",
+                        "Miramichi, Reach 18",
+                        "Miramichi, Reach 19",
+                        "Miramichi, Reach 20",
+                        "Miramichi, Reach 21",
+                        "Miramichi, Reach 22",
+                        "Miramichi, Reach 23a",
+                        "Miramichi, Reach 23b",
+                        "Miramichi, Reach 24",
+                        "Miramichi, Reach 25",
+                        "Miramichi, Reach 26",
+                        "Miramichi, Reach 27"
+                    ],
+                    "Coords" : {
+                        "Lat" : {
+                            "min" : 5906000,
+                            "max" : 5937000
+                        },
+                        "Lon" : {
+                            "min" : -7302000,
+                            "max" : -7226000
+                        }
+                    }
+                }
+            }
+	},
         "FR" : {
             "Form" : {
                 "Title" : "Fraser River, BC",
