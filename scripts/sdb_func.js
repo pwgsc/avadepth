@@ -142,9 +142,15 @@ if (!(typeof avaIFaceJS === 'undefined')) {
                 avaIFaceJS.sdb_func.tableReport.clear();
                 $('#report_tbl tbody tr').remove();
                 $.each(data, function() {
+										var file = this.fileNumber;
+
+										if(!file.split(".")[1]){
+											 file = file + ".dwf";
+										}
+
                     avaIFaceJS.sdb_func.tableReport.row.add(
                         [this.date.split("T")[0],
-                            "<a href='http://www2.pac.dfo-mpo.gc.ca/Data/dwf/" + this.fileNumber + ".dwf?' target='_blank'>" + this.fileNumber + "</a>",
+                            "<a href='http://www2.pac.dfo-mpo.gc.ca/Data/dwf/" + file + "?' target='_blank'>" + file + "</a>",
                             this.location,
                             this.drawType,
                             this.kmStart,
@@ -187,6 +193,13 @@ if (!(typeof avaIFaceJS === 'undefined')) {
                     avaIFaceJS.sdb_func.fillLocation();
                     $('#location').val(data.location);
                     return;
+								case "MI":
+										$('#sdb_waterway').val("MIR");
+										avaIFaceJS.sdb_func.fillChannel();
+										$('#channel').val("MI");
+										avaIFaceJS.sdb_func.fillLocation();
+										$('#location').val(data.location);
+										return;
                 default:
                     $('#sdb_waterway').val("CWC");
             }
@@ -453,3 +466,6 @@ function assert(condition, message) {
         throw message;
     }
 }
+
+//# sourceURL=incl_ava_defs-eng.js
+

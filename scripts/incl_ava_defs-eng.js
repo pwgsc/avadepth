@@ -195,12 +195,12 @@ incl_ava_defs={
         },
 	"MIR" : {
             "Form" : {
-                "Title" : "Miramichi River Super",
+                "Title" : "Atlantic",
                 "Order" : 5
             },
 	    "Coords" : {
                 "Lat" : {
-                    "min" : 5906000,
+                    "min" : 5979000,
                     "max" : 5937000
                 },
                 "Lon" : {
@@ -238,8 +238,8 @@ incl_ava_defs={
                         "Miramichi, Reach 20",
                         "Miramichi, Reach 21",
                         "Miramichi, Reach 22",
-                        "Miramichi, Reach 23a",
-                        "Miramichi, Reach 23b",
+                        "Miramichi, Reach 23A",
+                        "Miramichi, Reach 23B",
                         "Miramichi, Reach 24",
                         "Miramichi, Reach 25",
                         "Miramichi, Reach 26",
